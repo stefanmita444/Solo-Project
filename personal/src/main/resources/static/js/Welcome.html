@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:8080/dashboard#card-form -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <title>Welcome</title>
+    <!-- Font Awesome -->
+	<link href="./Welcome_files/all.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="./Welcome_files/css" rel="stylesheet">
+	<!-- MDB -->
+	<link href="./Welcome_files/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./Welcome_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./Welcome_files/main.css">
+<style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{}@keyframes onautofillcancel{}</style><style id="_0.6.2-">@import url(chrome-extension://agfmhdblakkkljpdgpamkbfblikonemn/insides/permanent/outside.css?0.6.2-);</style></head>
+<body class="vh-100" data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
+	<div class="body h-100">
+		<div class="cards">
+			
+				<div class="card shadow-6 rounded-6 card-copy" style="color:red">
+					<div class="card-body p-5"> 
+						<h2 class="card-title">
+							<strong>Premium</strong>
+							<span class="fw-light">card</span>
+						</h2>
+						<div id="footer" class="fw-light ls-widest">
+							<img alt="" src="./Welcome_files/chip.png" class="mb-5" style="width: 50px">
+							<h5 class="mb-5"> 1234  123 4 12 34 1 234</h5>
+							<p class="mb-2">Stefan</p>
+							<p class="mb-5">Sep/2022</p>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		<a id="createButton" class="btn" href="http://localhost:8080/dashboard#card-form">Create more</a>
+	</div>
+	
+	<div id="learn" class="container-1 h-100">
+		<div id="card-form" class="form-content text-white shadow-6 rounded-6">
+			<form id="newCard" action="http://localhost:8080/card/create" method="post">
+				<input type="hidden" name="_method" value="put">
+				
+				<div class="form-group row">
+				    <label for="initials" class="col-sm-4 col-form-label label mb4 opacity-70">Initials:</label>
+				    <div class="col-sm-8">
+				      	<input id="initials" name="initials" placeholder="Initials" type="text" class="form-control inputInitials" value="">
+				    </div>
+				</div>
+				<div class="form-group row">
+				    <label for="color" class="col-sm-4 col-form-label label mb4 opacity-70">Card Background Color:</label>
+				    <div class="col-sm-8">
+				      	<input id="color" name="color" placeholder="Card Background Color" type="color" class="form-control inputColor" value="">
+				    </div>
+				</div>
+				
+				<div class="form-group row">
+				    <label for="textColor" class="col-sm-4 col-form-label label mb4 opacity-70">Card Text Color:</label>
+				    <div class="col-sm-8">
+				      	<input id="textColor" name="textColor" placeholder="Card Text Color" type="color" class="form-control inputTextColor" value="">
+				    </div>
+				</div>
+				
+				<div class="form-group row">
+				    <label for="transparency" class="col-sm-4 col-form-label label mb4 opacity-70">Transparency:</label>
+				    <div class="col-sm-8">
+				    	<p><span id="rangeValue"></span></p>
+				      	<input id="range" name="transparency" min="0" max="100" type="range" value="15" class="form-range inputTransparency" autocompleted="">
+				    </div>
+				</div>
+					<button id="createCardButton" type="submit" class="btn btn-outline-light btn-lg" value="Submit">Create</button>
+			</form>
+		</div>
+	</div>	
+	
+
+
+
+	<!-- MDB -->
+	<script type="text/javascript" src="./Welcome_files/mdb.min.js"></script>
+	<script src="./Welcome_files/jquery.min.js"></script>
+    <script src="./Welcome_files/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./Welcome_files/vanilla-tilt.js"></script>
+    
+    <script type="text/javascript">
+    $("#login-form").hide();
+    	
+    	// Get the navbar
+
+    	// Get the offset position of the navbar
+
+    	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    	function myFunction() {
+	   	  if (window.pageYOffset >= sticky) {
+	   	    navbar.classList.add("sticky")
+	   	  } else {
+	   	    navbar.classList.remove("sticky");
+    	  }
+    	}
+
+    	// Update the current slider value (each time you drag the slider handle)
+    	$("#range").oninput = function() {
+	  		console.log($("#range").value);
+    	}
+    	
+    
+    </script>
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><screen-clip style="display: block;"></screen-clip></html>
